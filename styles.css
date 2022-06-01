@@ -637,3 +637,24 @@
     width: 200px;
     height: auto;
 }
+
+/* Game Info */
+
+.game__info {
+    background: #141414;
+}
+
+.game__info h1 {
+    padding-top: 5%;
+    text-align: center;
+    color : white;
+    font-size: 2rem;
+    text-decoration: underline #d86300;
+    text-underline-offset: 10%;
+}
+
+.game__info p {
+    padding-top: 1%;
+    text-align: center;
+    color : white;
+}
