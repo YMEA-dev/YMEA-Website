@@ -227,7 +227,6 @@
     background-color: #5e2b00;
     background-size: 100%;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
@@ -237,7 +236,6 @@
     background-color: #5e2b00;
     background-size: 100%;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
@@ -662,21 +660,80 @@
 
 /* Game Info */
 
-.game__info {
+.info__section {
     background: #141414;
+    height: 100vh;
 }
 
-.game__info h1 {
+.game__summary {
+    position: fixed;
+    padding-left: 3%;
     padding-top: 5%;
-    text-align: center;
-    color : white;
-    font-size: 2rem;
-    text-decoration: underline #d86300;
-    text-underline-offset: 10%;
 }
 
-.game__info p {
-    padding-top: 1%;
-    text-align: center;
-    color : white;
+.game__summary a {
+    text-decoration: none;
+    color: white;
+}
+
+.game__summary a:hover {
+    color: #ff8177;
+    transition: all 0.3s ease-out;
+}
+
+.info__list {
+    color: white;
+    margin-left: 8%;
+}
+
+.info__container {
+    display: flex;
+}
+
+.left__line {
+    border-left: 2px solid #ff7A5D;
+    height: 100vh;
+    margin-left: 15%;
+}
+
+.top__line {
+    border-top: 2px solid #ff7A5D;
+    position: fixed;
+    width: 100vw;
+}
+
+.bottom__line {
+    border-bottom: 2px solid #ff7A5D;
+    width: 100vw;
+}
+
+.lore__info, .map__info, .monsters__info, .character__info {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+@media screen and (max-width: 820px) {
+    .left__line {display: none}
+    .top__line {position: absolute; margin-top: 5%}
+    .bottom__line {display: none}
+
+    .info__container {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .game__summary {position: static; padding-left: 0; padding-top: 0; text-align: center}
+
+    .lore__info, .map__info, .monsters__info, .character__info {
+        position: relative;
+        display: none;
+
+        margin: auto;
+        text-align: center;
+        height: auto;
+        width: auto;
+        padding-top: 8%;
+        padding-left: 0;
+    }
 }

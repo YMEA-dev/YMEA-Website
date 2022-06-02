@@ -19,7 +19,7 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="index.html"><img src="images/Logo.png" alt="Game Logo" width="90" height="90"></a>
+            <a href="index.html"><img src="images/Logo.png" width="90" height="90"></a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -44,16 +44,54 @@
 
     <!-- Game info Section -->
 
-    <div class="game__info">
-        <div class="game__summary">
-            <h1>
-                Game Summary
-            </h1>
-            <p>
-                The goal of the game is simple
-            </p>
+    <div class="info__section">
+        <div class="info__container">
+            <div class="game__summary">
+                <h1 style="color: white; text-decoration: underline #ff7A5D; text-underline-offset: 10%">Summary</h1>
+                <ul class="info__list">
+                    <li><a href="#" onclick="displayInfo('lore')">The Lore</a></li>
+                    <li><a href="#" onclick="displayInfo('map')">The Map</a></li>
+                    <li><a href="#" onclick="displayInfo('character')">The Character</a></li>
+                    <li><a href="#" onclick="displayInfo('monsters')">Monsters</a></li>
+                </ul>
+            </div>
+            <div class="top__line"></div>
+            <div class="left__line"></div>
+            <div class="lore__info" id="lore">
+                <h1 style="color: white; text-decoration: underline #ff7A5D; text-underline-offset: 10%">
+                    Slain the boss and thou shall be freed from this stone prison.
+                </h1>
+                <p style="color: white; padding-top: 2%">
+                    In this game, you will incarnate a knight stuck in a dungeon. In order to escape, you must collect
+                    all keys and kill the boss guarding the exit.
+                </p>
+            </div>
+            <div class="map__info" id="map" hidden>
+                <h1 style="color: white; text-decoration: underline #ff7A5D; text-underline-offset: 10%">
+                    Discover the dungeon
+                </h1>
+                <p style="color: white; padding-top: 2%">
+                    You can take a look at the different sceneries of the stone fortress
+            </div>
+            <div class="monsters__info" id="monsters" hidden>
+                <h1 style="color: white; text-decoration: underline #ff7A5D; text-underline-offset: 10%">
+                    Here you can take a look at our bestiary
+                </h1>
+                <p style="color: white; padding-top: 2%">
+                    You can take a look at the different sceneries of the stone fortress
+            </div>
+            <div class="character__info" id="character" hidden>
+                <h1 style="color: white; text-decoration: underline #ff7A5D; text-underline-offset: 10%">
+                    Meet the game's hero
+                </h1>
+                <p style="color: white; padding-top: 2%">
+                    You can take a look at the different sceneries of the stone fortress
+            </div>
         </div>
+
     </div>
+
+    <div class="bottom__line"></div>
 
     <!-- Footer Section -->
     <div class="footer__container">
@@ -70,5 +108,7 @@
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
