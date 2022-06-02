@@ -638,6 +638,28 @@
     height: auto;
 }
 
+@media screen and (max-width: 960px) {
+    .about__student {
+        display: block;
+    }
+
+    .about__student img {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    .about__student p {
+        display: block;
+        margin: auto;
+        text-align: center;
+        height: auto;
+        width: auto;
+        padding-bottom: 2%;
+    }
+}
+
 /* Game Info */
 
 .game__info {
