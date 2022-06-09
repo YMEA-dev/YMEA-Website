@@ -14,8 +14,6 @@ function displayInfo(infoName)
     var monstersInfo = document.getElementById("monsters");
     var characterInfo = document.getElementById("character");
 
-    console.log(infoName);
-
     switch (infoName)
     {
         case "lore":
